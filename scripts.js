@@ -21,22 +21,22 @@ form.onsubmit = (event) => {
     event.preventDefault()
 
     switch(currency.value) {
-        case USD:
+        case 'USD':
             convertCurrency(amount.value, USD, 'US$')
             break
-        case EUR:
+        case 'EUR':
             convertCurrency(amount.value, EUR, '€')
             break
-        case GBP:
+        case 'GBP':
             convertCurrency(amount.value, GBP, '£')
             break
-        case JPY:
+        case 'JPY':
             convertCurrency(amount.value, JPY, '¥')
             break
-        case ARS:
+        case 'ARS':
             convertCurrency(amount.value, ARS, '$')
             break
-        case CNY:
+        case 'CNY':
             convertCurrency(amount.value, CNY, '¥')
             break
     }
