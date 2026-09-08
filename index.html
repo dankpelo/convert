@@ -5,17 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de moedas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>CONVERT</h1>
+    <img src="img/logo.svg" alt="CONVERT-logo">
 
     <main>
         <form>
-            <label for="value">VALOR</label>
+            <label for="value">Valor</label>
             <input type="number" name="value" id="value" placeholder="0,00">
-            <label for="currency">MOEDA</label>
+            <label for="currency">Moeda</label>
             <select name="currency" id="currency">
+                <option hidden disabled selected value="">Selecione a moeda</option>
                 <option value="">Dólar americano</option>
                 <option value="">Euro</option>
                 <option value="">Iene japonês</option>
@@ -25,12 +30,14 @@
             
             <button type="submit">Converter em reais</button>
 
-            <footer>
-                <p>US$ 1 = R$ 4,86</p>
-                <span>486,00 Reais</span>
-            </footer>
         </form>
+        <footer>
+            <span>US$ 1 = R$ 4,86</span>
+            <p>486,00 Reais</p>
+        </footer>
     </main>
+
+    <script src="scripts.js"></script>
 </body>
 
 </html>
