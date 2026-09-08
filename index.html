@@ -1,14 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conversor de moedas</title>
 </head>
 
 <body>
+    <h1>CONVERT</h1>
 
+    <main>
+        <form>
+            <label for="value">VALOR</label>
+            <input type="number" name="value" id="value" placeholder="0,00">
+            <label for="currency">MOEDA</label>
+            <select name="currency" id="currency">
+                <option value="">Dólar americano</option>
+                <option value="">Euro</option>
+                <option value="">Iene japonês</option>
+                <option value="">Peso argentino</option>
+                <option value="">Yuan chinês</option>
+            </select>
+            
+            <button type="submit">Converter em reais</button>
+
+            <footer>
+                <p>US$ 1 = R$ 4,86</p>
+                <span>486,00 Reais</span>
+            </footer>
+        </form>
+    </main>
 </body>
 
 </html>
